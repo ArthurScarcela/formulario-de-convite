@@ -15,6 +15,12 @@
 
 .aside-container {
   width: 25rem;
+  margin-block: 20px;
+  margin-left: 20px;
+
+  border-radius: 20px;
+  overflow: hidden;
+
   position: relative;
 
   & .title {
@@ -22,20 +28,28 @@
     margin-top: 32px;
     position: absolute;
     z-index: 1;
-
+    
     display: grid;
     gap: .8rem;
+    
+    & h2 {
+      font: var(--logo);
+      color: var(--pink);
+    }
 
-    & img {
+    & p {
+      font: var(--body);
+      color: var(--text-heading);
+    }
+
+    & #icon-birth {
       width: 2.86rem;
       height: 3rem;
     }
   }
-
-  header {
-    & img {
-
-    }
+  & #img-background{
+    width: 100%;
+    height: auto;
   }
 }
 
