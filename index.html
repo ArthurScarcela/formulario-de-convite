@@ -34,12 +34,68 @@
       <div class="main-container">
         <h1>Crie seu convite</h1>
 
-        <div class="calendar">
-          <img src="assets/icons/calendar.svg" alt="ícone de calendário">
-          <p>Sobre o evento</p>
-        </div>
+        <form action="#">
+
+          <div class="calendar">
+            <img src="assets/icons/calendar.svg" alt="ícone de calendário">
+            <p>Sobre o evento</p>
+          </div>
+
+          <fieldset>
+            <div class="input-wrapper">
+              <label for="event-title">Título</label>
+              <input type="text" name="event-title" id="event-title" placeholder="Nome do evento">
+          </fieldset>
+
+          <fieldset class="term">
+            <div class="input-wrapper">
+              <label for="beginning-date">Início</label>
+              <input type="datetime-local" name="beginning-date" id="beginning-date">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="end-date">Fim</label>
+              <input type="datetime-local" name="end-date" id="end-date">
+            </div>
+          </fieldset>
+
+          <fieldset class="especifications">
+            <div class="button-wrapper">
+              <label>Tipo</label>
+              <div class="button-type">
+                <div class="button-opt">
+                  <button value="presencial">
+                    <div class="bt-img" id="presencial"></div>
+                    Presencial
+                  </button>
+                </div>
+                <div class="button-opt">
+                  <button value="online">
+                    <div class="bt-img" id="online"></div>
+                    Online
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="location">Local</label>
+              <input type="text" name="location" id="location" placeholder="Link ou endereço">
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <div class="input-wrapper">
+              <label for="description">Descrição</label>
+              <textarea name="description" id="description"></textarea>
+            </div>
+          </fieldset>
       </div>
-    </main>
+      </form>
+
+  </div>
+  </main>
   </div>
 
 </body>

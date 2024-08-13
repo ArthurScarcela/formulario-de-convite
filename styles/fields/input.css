@@ -1,0 +1,38 @@
+.input-wrapper {
+  display: grid;
+  row-gap: .75rem;
+
+  & label {
+    font: var(--body);
+    color: var(--text-body);
+  }
+
+  & input {
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: var(--input-base);
+    outline: 2px;
+
+    color: #869198;
+
+    border: 1px solid var(--input-stroke);
+
+    padding-inline: .8rem;
+    padding-left: 1rem;
+
+  & ::placeholder {
+    color: var(--input-placeholder);
+  }
+  }
+
+}
+
+.term, .especifications{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 1rem;
+
+}
+
+

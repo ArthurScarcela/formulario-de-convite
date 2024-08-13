@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
 :root {
@@ -55,13 +55,24 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #000;
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
   padding-top: 20px;
+
+  & .app{
+    width: 80rem;
+  }
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+fieldset {
+  border: none;
 }

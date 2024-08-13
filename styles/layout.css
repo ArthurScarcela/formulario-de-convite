@@ -1,6 +1,9 @@
 .app {
+  max-height: 768px;
+  overflow: hidden;
+
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 26.3rem 52.5rem;
 
   border-radius: 12px;
   gap: 20px;
@@ -9,12 +12,12 @@
   margin-inline: 80px;
 
   background-color: #131516;
-  overflow: hidden;
+
 }
 
 
 .aside-container {
-  width: 25rem;
+  
   margin-block: 20px;
   margin-left: 20px;
 
@@ -48,21 +51,47 @@
     }
   }
   & #img-background{
-    width: 100%;
+    width: 25rem;
     height: auto;
   }
 }
 
 main {
+  
+  background-color: var(--shape-body);
+  margin-right: 1.25rem;
+  margin-top: 1.25rem;
+
+
+  border-radius: 12px;
+
   & .main-container {
-    margin-top: 80px;
     margin-inline: 130px;
+    margin-top: 80px;
+    
+  }
+  & fieldset {
+    margin-bottom: 1rem;
+  }
+
+  & h1 {
+    font: 800 1.75rem var(--baloo);
+    color: var(--text-heading);
   }
 
   & .calendar {
     display: flex;
     align-items: center;
     gap: .75rem;
-    margin-top: 40px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    font: 800 1.12rem/20% var(--baloo);
+    color: var(--text-heading);
+
+    & img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
