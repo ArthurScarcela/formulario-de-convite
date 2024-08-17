@@ -1,6 +1,5 @@
 .app {
   max-height: 768px;
-  overflow: hidden;
 
   display: grid;
   grid-template-columns: 26.3rem 52.5rem;
@@ -17,7 +16,7 @@
 
 
 .aside-container {
-  
+
   margin-block: 20px;
   margin-left: 20px;
 
@@ -31,10 +30,10 @@
     margin-top: 32px;
     position: absolute;
     z-index: 1;
-    
+
     display: grid;
     gap: .8rem;
-    
+
     & h2 {
       font: var(--logo);
       color: var(--pink);
@@ -50,26 +49,35 @@
       height: 3rem;
     }
   }
-  & #img-background{
+
+  & #img-background {
     width: 25rem;
     height: auto;
   }
 }
 
 main {
-  
+
   background-color: var(--shape-body);
+  max-height: 45.5rem;
+  overflow-y: scroll;
+
   margin-right: 1.25rem;
   margin-top: 1.25rem;
 
 
   border-radius: 12px;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   & .main-container {
+
     margin-inline: 130px;
     margin-top: 80px;
-    
   }
+
   & fieldset {
     margin-bottom: 1rem;
   }

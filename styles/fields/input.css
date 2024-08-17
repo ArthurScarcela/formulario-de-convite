@@ -13,7 +13,8 @@
     background-color: var(--input-base);
     outline: 2px;
 
-    color: #869198;
+    font: var(--body-sm);
+    color: var(--text-body);
 
     border: 1px solid var(--input-stroke);
 
