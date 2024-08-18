@@ -1,0 +1,72 @@
+.circle-container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border: 1px solid var(--input-stroke);
+  border-radius: 50%;
+  background-color: var(--shape-button);
+
+  cursor: pointer;
+
+  & .circle {
+
+    border-radius: 50%;
+    width: 1.7rem;
+    height: 1.75rem;
+    margin: .3rem;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: 1px solid var(--shape-hover);
+    border: 1px solid var(--brand-light);
+  }
+}
+
+#circle-color-blue {
+  background-color: var(--brand-light);
+}
+
+#circle-color-navy {
+  background-color: var(--navy);
+}
+
+#circle-color-purple {
+  background-color: var(--purple);
+}
+
+#circle-color-fuschia {
+  background-color: var(--fuschia);
+}
+
+#circle-color-pink {
+  background-color: var(--pink);
+}
+
+#circle-color-red {
+  background-color: var(--danger);
+}
+
+#circle-color-orange {
+  background-color: var(--orange);
+}
+
+#circle-color-yellow {
+  background-color: var(--yellow);
+}
+
+#circle-color-lime {
+  background-color: var(--lime);
+}
+
+#circle-color-green {
+  background-color: var(--green);
+}
+
+#circle-color-cyan {
+  background-color: var(--cyan);
+}

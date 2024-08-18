@@ -1,0 +1,36 @@
+.cards-container {
+  & .card {
+    width: 8.37rem;
+    
+    outline: 2px;
+    border: 1px solid var(--input-stroke);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: .5rem;
+
+    background-color: var(--shape-button);
+
+    cursor: pointer;
+    
+    & img {
+      margin: .25rem;
+
+      border-radius: .25rem;
+    }
+    & p {
+      font: 400 0.875rem var(--open-sans);
+      color: var(--text-heading);
+      margin-inline: .25rem;
+      margin-block: .5rem;
+    }
+
+    &:hover, &:focus{
+      background-color: 1px solid var(--shape-hover);
+      border: 1px solid var(--brand-light);
+    }
+  }
+}

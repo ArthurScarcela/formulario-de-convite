@@ -1,8 +1,8 @@
 .input-wrapper {
   display: grid;
-  row-gap: .75rem;
 
   & label {
+    margin-bottom: 1rem;
     font: var(--body);
     color: var(--text-body);
   }
