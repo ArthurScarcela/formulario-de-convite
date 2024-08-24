@@ -47,7 +47,7 @@
               <input type="text" name="event-title" id="event-title" placeholder="Nome do evento">
           </fieldset>
 
-          <fieldset class="term">
+          <fieldset class="deadline">
             <div class="input-wrapper">
               <label for="beginning-date">Início</label>
               <input type="datetime-local" name="beginning-date" id="beginning-date">
@@ -148,7 +148,7 @@
                   <input type="radio" name="circle-group" id="circle-blue">
                   <div class="circle-inner" id="cyan"></div>
                 </label>
-                
+
               </div>
             </div>
           </fieldset>
@@ -158,54 +158,66 @@
               <label>Tema do evento</label>
             </div>
             <div class="cards-container">
-              <div class="card">
+              <label class="card">
+                <input type="radio" name="birth" id="birth">
                 <img src="/assets/images/Image.jpg" alt="" class="card-image">
                 <p class="card-description">Aniversário</p>
-              </div>
-              <div class="card">
+              </label>
+              <label class="card">
+                <input type="radio" name="birth" id="birth">
                 <img src="/assets/images/Image-1.jpg" alt="" class="card-image">
                 <p class="card-description">Infantil</p>
-              </div>
-              <div class="card">
+              </label>
+              <label class="card">
+                <input type="radio" name="birth" id="birth">
                 <img src="/assets/images/Image-2.jpg" alt="" class="card-image">
                 <p class="card-description">Formatura</p>
-              </div>
-              <div class="card">
+              </label>
+              <label class="card">
+                <input type="radio" name="birth" id="birth">
                 <img src="/assets/images/Image-3.jpg" alt="" class="card-image">
                 <p class="card-description">Casamento</p>
-              </div>
-              <div class="card">
+              </label>
+              <label class="card">
+                <input type="radio" name="birth" id="birth">
                 <img src="/assets/images/Image-4.jpg" alt="" class="card-image">
                 <p class="card-description">Chá de bebê</p>
-              </div>
-              <div class="card">
+              </label>
+              <label class="card">
+                <input type="radio" name="birth" id="birth">
                 <img src="/assets/images/Image-5.jpg" alt="" class="card-image">
                 <p class="card-description">Chá de panela</p>
-              </div>
-              <div class="card">
+              </label>
+              <label class="card">
+                <input type="radio" name="birth" id="birth">
                 <img src="/assets/images/Image-6.jpg" alt="" class="card-image">
                 <p class="card-description">Carnaval</p>
-              </div>
-              <div class="card">
+              </label>
+              <label class="card">
+                <input type="radio" name="birth" id="birth">
                 <img src="/assets/images/Image-7.jpg" alt="" class="card-image">
                 <p class="card-description">Pascoa</p>
-              </div>
-              <div class="card">
+              </label>
+              <label class="card">
+                <input type="radio" name="birth" id="birth">
                 <img src="/assets/images/Image-8.jpg" alt="" class="card-image">
                 <p class="card-description">São João</p>
-              </div>
-              <div class="card">
+              </label>
+              <label class="card">
+                <input type="radio" name="birth" id="birth">
                 <img src="/assets/images/Image-9.jpg" alt="" class="card-image">
                 <p class="card-description">Halloween</p>
-              </div>
-              <div class="card">
+              </label>
+              <label class="card">
+                <input type="radio" name="birth" id="birth">
                 <img src="/assets/images/Image-10.jpg" alt="" class="card-image">
                 <p class="card-description">Natal</p>
-              </div>
-              <div class="card">
+              </label>
+              <label class="card">
+                <input type="radio" name="birth" id="birth">
                 <img src="/assets/images/Image-11.jpg" alt="" class="card-image">
                 <p class="card-description">Outro</p>
-              </div>
+              </label>
             </div>
           </fieldset>
 
@@ -223,17 +235,16 @@
 
             <div class="file-wrapper">
               <label>Foto de capa</label>
-              <div class="input-file">
-                <div class="submit-btn">
-                  <input type="file">
-                  <div class="file-image">
-                    <img src="/assets/icons/upload.svg" alt="ícone de upload">
+              <div class="file-input">
+                <label for="fileUpload">
+                  <span>
+                    <img src="assets/icons/upload.svg" alt="ícone de upload">
                     <p>Selecionar</p>
-                  </div>
-                  <div>
-                    <p class="file-description">Nenhum arquivo selecionado</p>
-                  </div>
-                </div>
+                  </span>
+                </label>
+                <input type="file" id="fileUpload" accept=".jpg, .png" required>
+                <div class="feedback-valid">Imagem.png</div>
+                <div class="feedback-invalid">Nenhum arquivo selecionado</div>
               </div>
             </div>
 
@@ -265,6 +276,36 @@
                 <input type="tel" name="phone" id="phone" maxlength="12" minlength="12" placeholder="(99)999999999">
               </div>
             </div>
+          </fieldset>
+
+          <fieldset class="footer">
+            <div class="terms-container">
+              <div class="terms">
+                <div class="checkbox">
+                  <input type="checkbox" name="term" id="term" required>
+                </div>
+                <p>Li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span></p>
+              </div>
+              <div class="terms">
+                <div class="checkbox">
+                  <input type="checkbox" name="term" id="term" required>
+                </div>
+                <p>Aceito receber atualizações e promoções por e-mail</p>
+              </div>
+              <div class="terms">
+                <div class="checkbox">
+                  <input type="checkbox" name="term" id="term" required>
+                </div>
+                <p>Aceito receber atualizações e promoções por SMS</p>
+              </div>
+              <div class="create-event">
+                <button type="submit">
+                  <img src="assets/icons/ticket.svg" alt="ícone de ticket">
+                  <p>Gerar convite</p>
+                </button>
+              </div>
+            </div>
+
           </fieldset>
         </form>
       </div>

@@ -20,7 +20,7 @@
     color: var(--text-body);
 
     &::placeholder {
-      font: 400 1rem var(--open-sans);
+      font: 400 0.875rem var(--open-sans);
     }
   }
 }

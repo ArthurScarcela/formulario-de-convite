@@ -1,0 +1,72 @@
+.terms-container {
+  margin-top: 2.5rem;
+
+  & .terms {
+    display: flex;
+    align-items: center;
+
+    gap: .75rem;
+    margin-block: 0.25rem;
+
+    & .checkbox {
+      position: relative;
+
+      width: 1.25rem;
+      height: 1.25rem;
+
+      margin-block: 0.25rem;
+      background-image: url(/assets/icons/unchecked.png);
+    }
+    & p {
+      color: var(--text-body);
+      font: var(--body);
+      & span {
+        color: var(--brand-light);
+        font: 500 0.875rem var(--open-sans);
+      }
+    }
+
+    & input {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      opacity: 0;
+      cursor: pointer;
+    }
+    .checkbox:has(input:checked) {
+      background: url(/assets/icons/checked.png);
+    }
+  }
+
+  & .create-event {
+    margin-top: 3rem;
+    display: flex;
+
+    justify-content: end;
+    & button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: .75rem;
+      color: var(--text-heading);
+      font: var(--body);
+
+      background-color: var(--brand-dark);
+
+      border: none;
+      border-radius: .5rem ;
+      & img {
+        width: 1.25rem;
+        height: 1.25rem;
+
+        margin-block: .75rem;
+        margin-left: 1.25rem;
+      }
+      & p {
+        margin-right: 1.25rem;
+      }
+    }
+  }
+}

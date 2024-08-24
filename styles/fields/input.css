@@ -52,7 +52,7 @@
 
 }
 
-.term, .especifications{
+.deadline, .especifications{
   display: grid;
   grid-template-columns: 1fr 1fr;
 
