@@ -34,7 +34,7 @@
       <div class="main-container">
         <h1>Crie seu convite</h1>
 
-        <form action="#">
+        <form>
 
           <header class="header-title">
             <img src="assets/icons/calendar.svg" alt="ícone de calendário">
@@ -102,41 +102,53 @@
           <fieldset>
             <div class="input-wrapper">
               <label>Cor principal</label>
-              <div class="colors-container">
-                <button class="circle-container">
-                  <div id="circle-color-blue" class="circle"></div>
-                </button>
-                <button class="circle-container">
-                  <div id="circle-color-navy" class="circle"></div>
-                </button>
-                <button class="circle-container">
-                  <div id="circle-color-purple" class="circle"></div>
-                </button>
-                <button class="circle-container">
-                  <div id="circle-color-fuschia" class="circle"></div>
-                </button>
-                <button class="circle-container">
-                  <div id="circle-color-pink" class="circle"></div>
-                </button>
-                <button class="circle-container">
-                  <div id="circle-color-red" class="circle"></div>
-                </button>
-                <button class="circle-container">
-                  <div id="circle-color-orange" class="circle"></div>
-                </button>
-                <button class="circle-container">
-                  <div id="circle-color-yellow" class="circle"></div>
-                </button>
-                <button class="circle-container">
-                  <div id="circle-color-lime" class="circle"></div>
-                </button>
-                <button class="circle-container">
-                  <div id="circle-color-green" class="circle"></div>
-                </button>
-                <button class="circle-container">
-                  <div id="circle-color-cyan" class="circle"></div>
-                </button>
+              <div class="circle-container">
+                <label class="circle">
+                  <input type="radio" name="circle-group" id="circle-blue">
+                  <div class="circle-inner" id="blue"></div>
+                </label>
 
+                <label class="circle">
+                  <input type="radio" name="circle-group" id="circle-blue">
+                  <div class="circle-inner" id="navy"></div>
+                </label>
+                <label class="circle">
+                  <input type="radio" name="circle-group" id="circle-blue">
+                  <div class="circle-inner" id="purple"></div>
+                </label>
+                <label class="circle">
+                  <input type="radio" name="circle-group" id="circle-blue">
+                  <div class="circle-inner" id="fuschia"></div>
+                </label>
+                <label class="circle">
+                  <input type="radio" name="circle-group" id="circle-blue">
+                  <div class="circle-inner" id="pink"></div>
+                </label>
+                <label class="circle">
+                  <input type="radio" name="circle-group" id="circle-blue">
+                  <div class="circle-inner" id="danger"></div>
+                </label>
+                <label class="circle">
+                  <input type="radio" name="circle-group" id="circle-blue">
+                  <div class="circle-inner" id="orange"></div>
+                </label>
+                <label class="circle">
+                  <input type="radio" name="circle-group" id="circle-blue">
+                  <div class="circle-inner" id="yellow"></div>
+                </label>
+                <label class="circle">
+                  <input type="radio" name="circle-group" id="circle-blue">
+                  <div class="circle-inner" id="lime"></div>
+                </label>
+                <label class="circle">
+                  <input type="radio" name="circle-group" id="circle-blue">
+                  <div class="circle-inner" id="green"></div>
+                </label>
+                <label class="circle">
+                  <input type="radio" name="circle-group" id="circle-blue">
+                  <div class="circle-inner" id="cyan"></div>
+                </label>
+                
               </div>
             </div>
           </fieldset>
@@ -198,8 +210,6 @@
           </fieldset>
 
           <fieldset class="thumb">
-
-
             <div class="checkbox-wrapper">
               <label>Tema</label>
               <div class="div-container">
@@ -226,7 +236,35 @@
                 </div>
               </div>
             </div>
-            
+
+          </fieldset>
+
+          <fieldset class="contact-name">
+            <header class="header-title">
+              <img src="/assets/icons/contact.svg" alt="ícone de contato">
+              <p>Dados para contato</p>
+            </header>
+            <div class="input-wrapper">
+              <label for="fullname">Nome</label>
+              <input type="text" name="fullname" id="fullname" placeholder="Nome completo" required>
+              <div class="error">
+                <img src="/assets/icons/circle-alert.svg" alt="ícone de erro">
+                <span>Campo obrigatório</span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="contact-info">
+            <div class="input-wrapper grid gap">
+              <div class="email-container">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+              </div>
+              <div class="phone-container">
+                <label for="phone">Telefone</label>
+                <input type="tel" name="phone" id="phone" maxlength="12" minlength="12" placeholder="(99)999999999">
+              </div>
+            </div>
           </fieldset>
         </form>
       </div>

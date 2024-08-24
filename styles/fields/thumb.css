@@ -1,0 +1,80 @@
+.thumb {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+
+  & .checkbox-wrapper {
+    display: block;
+
+    & label {
+      font: var(--body);
+      color: var(--text-body);
+    }
+  }
+
+  & .div-container {
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+
+
+  }
+
+  .theme-container {
+    position: relative;
+
+    border: 1px solid var(--input-stroke);
+    border-radius: 1rem;
+    width: 4rem;
+    height: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .theme-button {
+      position: absolute;
+      left: .25rem;
+      width: 1.5rem;
+      height: 1.5rem;
+
+      border-radius: 50%;
+
+      background-color: var(--input-stroke);
+      transition: all 0.5s ease;
+
+    }
+
+    & input {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      cursor: pointer;
+
+    }
+
+    &:has(input:checked) {
+      background-color: var(--brand-light);
+    }
+
+    &:has(input:checked) .theme-button {
+      left: calc(100% - 1.7rem);
+      background-color: white;
+    }
+  }
+
+  .tema::after {
+    color: var(--text-heading);
+    font: 400 0.875rem var(--open-sans);
+    content: "Escuro";
+  }
+
+  &:has(input:checked) .tema::after {
+    content: "Claro";
+  }
+
+}

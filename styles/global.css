@@ -46,7 +46,7 @@
 
   --logo: 400 2.5rem var(--leckerli-one);
 
-  --body: 400 1rem var(--open-sans);
+  --body: 400 0.875rem var(--open-sans);
   --body-md: 600 1rem var(--open-sans);
   --body-sm: 600 0.8rem var(--open-sans);
   --body-xs: 600 0.75rem var(--open-sans);
@@ -76,3 +76,4 @@ img {
 fieldset {
   border: none;
 }
+
