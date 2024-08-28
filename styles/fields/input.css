@@ -39,10 +39,11 @@
   &:valid + .error {
     display: none;
   }
-
-  &:not(:focus):valid + .error {
+  &:not(:focus):invalid {
+    border: 1px solid var(--input-stroke);
+  }
+  &:not(:focus):invalid + .error {
     display: none;
-    
   }
   &:invalid {
     border: 1px solid var(--danger);
@@ -52,11 +53,19 @@
 
 }
 
-.deadline, .especifications{
+.deadline {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   gap: 1rem;
+
+}
+.especifications {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  .input-wrapper {
+    max-height: 79px;
+  }
 
 }
 

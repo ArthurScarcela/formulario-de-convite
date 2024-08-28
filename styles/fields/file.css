@@ -3,7 +3,7 @@
   & label {
     color: var(--text-body);
   }
-  & span {
+  & .file-icon {
     background-color: var(--shape-button);
     display: flex;
     align-items: center;
@@ -60,5 +60,15 @@
 
   .file-input input[type="file"]:valid~.feedback-valid {
     display: block;
+  }
+
+
+  .error {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+
+    color: var(--danger);
+    font: var(--body);
   }
 }

@@ -1,7 +1,10 @@
 .textarea-wrapper {
   display: grid;
-  gap: 1rem;
-  
+
+  & label {
+    margin-bottom: 1rem;
+  }
+
   font: var(--body);
   color: var(--text-body);
 
@@ -22,5 +25,31 @@
     &::placeholder {
       font: 400 0.875rem var(--open-sans);
     }
+
+    &[required]+.error {
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+
+      font: var(--body);
+      color: var(--danger);
+
+      margin-top: .25rem;
+    }
+
+    &:valid + .error {
+      display: none;
+    }
+    &:not(:focus):invalid {
+      border: 1px solid var(--input-stroke);
+    }
+    &:not(:focus):invalid + .error {
+      display: none;
+    }
+    &:invalid {
+      border: 1px solid var(--danger);
+    }
+
   }
+
 }

@@ -44,7 +44,11 @@
           <fieldset>
             <div class="input-wrapper">
               <label for="event-title">Título</label>
-              <input type="text" name="event-title" id="event-title" placeholder="Nome do evento">
+              <input type="text" name="event-title" id="event-title" placeholder="Nome do evento" required>
+              <div class="error">
+                <img src="/assets/icons/circle-alert.svg" alt="ícone de erro">
+                <span>Campo obrigatório</span>
+              </div>
           </fieldset>
 
           <fieldset class="deadline">
@@ -63,33 +67,38 @@
             <div class="button-wrapper">
               <label>Tipo</label>
               <div class="button-type">
-                <div class="button-opt">
-                  <button value="presencial">
+                <label class="button-opt" >
+                  <input type="radio" value="presencial" name="tipo" id="face-to-face">
                     <div class="bt-img" id="presencial"></div>
                     Presencial
-                  </button>
-                </div>
-                <div class="button-opt">
-                  <button value="online">
+                </label>
+                <label class="button-opt">
+                  <input type="radio" value="online" name="tipo" id="virtual">
                     <div class="bt-img" id="online"></div>
                     Online
-                  </button>
-                </div>
+                </label>
               </div>
             </div>
 
             <div class="input-wrapper">
               <label for="location">Local</label>
-              <input type="text" name="location" id="location" placeholder="Link ou endereço">
+              <input type="text" name="location" id="location" placeholder="Link ou endereço" required>
+              <div class="error">
+                <img src="/assets/icons/circle-alert.svg" alt="ícone de erro">
+                <span>Campo obrigatório</span>
+              </div>
             </div>
-
           </fieldset>
 
           <fieldset>
             <div class="textarea-wrapper">
               <label for="description">Descrição</label>
               <textarea name="description" id="description"
-                placeholder="Escreva sobre os detalhes do evento"></textarea>
+                placeholder="Escreva sobre os detalhes do evento" required></textarea>
+                <div class="error">
+                  <img src="/assets/icons/circle-alert.svg" alt="ícone de erro">
+                  <span>Campo obrigatório</span>
+                </div>
             </div>
           </fieldset>
 
@@ -237,7 +246,7 @@
               <label>Foto de capa</label>
               <div class="file-input">
                 <label for="fileUpload">
-                  <span>
+                  <span class="file-icon">
                     <img src="assets/icons/upload.svg" alt="ícone de upload">
                     <p>Selecionar</p>
                   </span>
@@ -246,6 +255,7 @@
                 <div class="feedback-valid">Imagem.png</div>
                 <div class="feedback-invalid">Nenhum arquivo selecionado</div>
               </div>
+
             </div>
 
           </fieldset>
@@ -269,11 +279,19 @@
             <div class="input-wrapper grid gap">
               <div class="email-container">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+                <div class="error">
+                  <img src="/assets/icons/circle-alert.svg" alt="ícone de erro">
+                  <span>Campo obrigatório</span>
+                </div>
               </div>
               <div class="phone-container">
                 <label for="phone">Telefone</label>
-                <input type="tel" name="phone" id="phone" maxlength="12" minlength="12" placeholder="(99)999999999">
+                <input type="tel" name="phone" id="phone" maxlength="12" minlength="12" placeholder="(99)999999999" required>
+                <div class="error">
+                  <img src="/assets/icons/circle-alert.svg" alt="ícone de erro">
+                  <span>Campo obrigatório</span>
+                </div>
               </div>
             </div>
           </fieldset>

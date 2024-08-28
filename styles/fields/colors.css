@@ -16,7 +16,10 @@
     background: var(--shape-button);
     cursor: pointer;
     user-select: none;
-    /* Impede a seleção do texto ao clicar */
+    
+  }
+  .circle:hover {
+    background-color: var(--shape-hover);
   }
 
   .circle-inner {
